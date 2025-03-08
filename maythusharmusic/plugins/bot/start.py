@@ -88,21 +88,21 @@ async def start_pm(client, message: Message, _):
         try:
             out = private_panel(_)
             lol = await message.reply_text("ωєℓᴄᴏᴍᴇ вαву ꨄ︎ {}.. အ".format(message.from_user.mention))
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1)
             await lol.edit_text("ωєℓᴄᴏᴍᴇ вαву ꨄ {}.. ရမ်း".format(message.from_user.mention))
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1)
             await lol.edit_text("ωєℓᴄᴏᴍᴇ вαву ꨄ {}.. ချစ်".format(message.from_user.mention))
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1)
             await lol.edit_text("ωєℓᴄᴏᴍᴇ вαву ꨄ {}.. တယ်".format(message.from_user.mention))
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1)
             await lol.edit_text("ωєℓᴄᴏᴍᴇ вαву ꨄ {}.. ထား".format(message.from_user.mention))
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1)
             await lol.edit_text("ωєℓᴄᴏᴍᴇ вαву ꨄ {}.. မ".format(message.from_user.mention))
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1)
             await lol.edit_text("ωєℓᴄᴏᴍᴇ вαву ꨄ {}.. သွား".format(message.from_user.mention))
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1)
             await lol.edit_text("ωєℓᴄᴏᴍᴇ вαву ꨄ {}.. ဘူး".format(message.from_user.mention))
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1)
             await lol.edit_text("ωєℓᴄᴏᴍᴇ вαву ꨄ {}.. ❤".format(message.from_user.mention))
                
             await lol.delete()
@@ -129,6 +129,7 @@ async def start_pm(client, message: Message, _):
             await lols.edit_text("**⚡ѕтαятιиg.**")
             await lols.edit_text("**⚡ѕтαятιиg....**")
             m = await message.reply_sticker("CAACAgUAAxkBAAMJZ7LS9RsSUHIOzOqsRgUFk9hHSv4AArwWAAKfFpBVhnvDvVebyvM2BA")
+            await asyncio.sleep(3)
             if message.chat.photo:
 
                 userss_photo = await app.download_media(
