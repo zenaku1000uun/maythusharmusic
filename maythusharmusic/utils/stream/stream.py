@@ -15,15 +15,7 @@ from maythusharmusic.misc import SUDOERS
 from maythusharmusic.utils import seconds_to_min, time_to_seconds
 from maythusharmusic.utils.channelplay import get_channeplayCB
 from maythusharmusic.utils.decorators.language import languageCB
-from maythusharmusic.utils.decorators.play import PlayWrapper
 from maythusharmusic.utils.formatters import formats
-from maythusharmusic.utils.inline import (
-    botplaylist_markup,
-    livestream_markup,
-    playlist_markup,
-    slider_markup,
-    track_markup,
-)
 from maythusharmusic.utils.database import (
     add_served_chat,
     add_served_user,
@@ -55,7 +47,6 @@ from maythusharmusic.utils.database import add_active_video_chat, is_active_chat
 from maythusharmusic.utils.exceptions import AssistantErr
 from maythusharmusic.utils.inline import (
     aq_markup,
-    queuemarkup,
     close_markup,
     stream_markup,
     stream_markup2,
@@ -149,7 +140,7 @@ async def stream(
                     forceplay=forceplay,
                 )
                 img = await get_thumb(vidid)
-                button = stream_markup(_, vidid, chat_id)
+                button = stream_markup(_, chat_id)
                 run = await app.send_photo(
                     original_chat_id,
                     photo=img,
@@ -206,7 +197,6 @@ async def stream(
                 user_id,
                 "video" if video else "audio",
             )
-            img = await get_thumb(vidid)
             position = len(db.get(chat_id)) - 1
             button = aq_markup(_, chat_id)
             await app.send_photo(
@@ -240,7 +230,7 @@ async def stream(
                 forceplay=forceplay,
             )
             img = await get_thumb(vidid)
-            button = stream_markup(_, vidid, chat_id)
+            button = stream_markup(_, chat_id)
             run = await app.send_photo(
                 original_chat_id,
                 photo=img,
@@ -474,4 +464,3 @@ async def stream(
             db[chat_id][0]["mystic"] = run
             db[chat_id][0]["markup"] = "tg"
             await mystic.delete()
-
