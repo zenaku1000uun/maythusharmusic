@@ -27,7 +27,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
     return buttons
 
 
-def stream_markup_timer(_, vidid, chat_id, played, dur):
+def stream_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
@@ -79,7 +79,7 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
     return buttons
 
 
-def stream_markup(_, videoid, chat_id):
+def stream_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
@@ -190,7 +190,7 @@ def telegram_markup(_, chat_id):
 ## Queue Markup
 
 
-def queue_markup(_, videoid, chat_id):
+def queue_markup(_, chat_id):
 
     buttons = [
         [
@@ -245,10 +245,10 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/BRANDEDKING8"
+                text=" ˹ ѕυᴘᴘσʀт ˼ ", url=f"https://t.me/sasukemusicbotsupportchat"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/BRANDED_WORLD"
+                text=" ˹ υᴘᴅᴧтєѕ ˼ ", url=f"https://t.me/sasukevipmusicbotsupport"
             ),
         ],
 
@@ -545,4 +545,3 @@ def panel_markup_clone(_, vidid, chat_id):
     ]
 
     return buttons
-
