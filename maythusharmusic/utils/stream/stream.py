@@ -192,7 +192,7 @@ async def stream(
                 vidid, mystic, videoid=True, video=status
             )
         except:
-            raise AssistantErr(_["play_14"])
+            await mystic.edit_text(_["play_3"])
         if await is_active_chat(chat_id):
             await put_queue(
                 chat_id,
@@ -205,6 +205,7 @@ async def stream(
                 user_id,
                 "video" if video else "audio",
             )
+            img = await get_thumb(vidid)
             position = len(db.get(chat_id)) - 1
             button = aq_markup(_, chat_id)
             await app.send_photo(
