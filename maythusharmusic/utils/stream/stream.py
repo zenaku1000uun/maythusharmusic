@@ -127,7 +127,7 @@ async def stream(
                         vidid, mystic, video=status, videoid=True
                     )
                 except:
-                    await mystic.edit_text(_["play_3"])
+                    raise AssistantErr(_["play_3"])
                 await Hotty.join_call(
                     chat_id,
                     original_chat_id,
@@ -192,7 +192,8 @@ async def stream(
                 vidid, mystic, videoid=True, video=status
             )
         except:
-            await mystic.edit_text(_["play_3"])
+            raise AssistantErr(_["play_3"])
+
         if await is_active_chat(chat_id):
             await put_queue(
                 chat_id,
@@ -205,14 +206,13 @@ async def stream(
                 user_id,
                 "video" if video else "audio",
             )
-            img = await get_thumb(vidid)
             position = len(db.get(chat_id)) - 1
             button = aq_markup(_, chat_id)
             await app.send_photo(
                 chat_id=original_chat_id,
                 photo=img,
                 caption=_["queue_4"].format(
-                    position, title[:18], duration_min, user_name
+                    position, title[:27], duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
