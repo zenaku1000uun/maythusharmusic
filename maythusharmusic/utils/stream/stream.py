@@ -15,7 +15,15 @@ from maythusharmusic.misc import SUDOERS
 from maythusharmusic.utils import seconds_to_min, time_to_seconds
 from maythusharmusic.utils.channelplay import get_channeplayCB
 from maythusharmusic.utils.decorators.language import languageCB
+from maythusharmusic.utils.decorators.play import PlayWrapper
 from maythusharmusic.utils.formatters import formats
+from maythusharmusic.utils.inline import (
+    botplaylist_markup,
+    livestream_markup,
+    playlist_markup,
+    slider_markup,
+    track_markup,
+)
 from maythusharmusic.utils.database import (
     add_served_chat,
     add_served_user,
@@ -184,7 +192,7 @@ async def stream(
                 vidid, mystic, videoid=True, video=status
             )
         except:
-            await mystic.edit_text(_["play_3"])
+            raise AssistantErr(_["play_14"])
         if await is_active_chat(chat_id):
             await put_queue(
                 chat_id,
