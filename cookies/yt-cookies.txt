@@ -2,25 +2,6 @@
 # http://curl.haxx.se/rfc/cookie_spec.html
 # This is a generated file!  Do not edit.
 
-.youtube.com	TRUE	/	TRUE	1742003814	GPS	1
-.youtube.com	TRUE	/	TRUE	1773538015	__Secure-1PSIDTS	sidts-CjEB7pHpte8HjT8KQ0EfmFjDej_l-1clMsskdbgxlLG-Jw_cYfzIMEx8UHY0W6X2QEHFEAA
-.youtube.com	TRUE	/	TRUE	1773538015	__Secure-3PSIDTS	sidts-CjEB7pHpte8HjT8KQ0EfmFjDej_l-1clMsskdbgxlLG-Jw_cYfzIMEx8UHY0W6X2QEHFEAA
-.youtube.com	TRUE	/	TRUE	1776562015	__Secure-3PAPISID	1VeRpwxX7yd-3hiN/AVvKbPgQoYPWxokdI
-.youtube.com	TRUE	/	TRUE	1776562015	__Secure-3PSID	g.a000uwhhbDecQZ8h6rN-cLYfB8sWtPKg0tn2tl3xxG8zZtDXcmf6nVtzb0IR0i0bFfFMfD1DNgACgYKAT0SARASFQHGX2Mi-m--ZmmljL89ecvdMqzA_BoVAUF8yKp5Rs2urIB0Fx2qu9TUkbvd0076
-.youtube.com	TRUE	/	TRUE	1776562015	LOGIN_INFO	AFmmF2swRgIhANG2RO-EGLO_1rHNb13bvisM885tpa7ASqmhlWoC99d5AiEAlAez5dRxLUFcTdkuo8mhdMx64JXKnV0HpCZI61zB6_M:QUQ3MjNmd0c2UGxSdDVQZFA5R3V1X0JjUTRCblY4WW4wNEVHTGliV0pTSzFybEtUMVpqSGdlNEV4SkJwQXN4c3ppX09IdnZnZmZycTJKc19YNHkxREZaSExxbjdRakVYSUQxUnBwcnNjV3R4dUhTbFFTWmZUZkpPZmk3UXJ3czZUbUowM3pXWFFEbDBCOUZ3UkZnVlp4U1BjQUZWNmxIWGRn
-.youtube.com	TRUE	/	TRUE	1776562109	PREF	tz=Asia.Rangoon&f7=100
-.youtube.com	TRUE	/	FALSE	1742002128	ST-1qlz6ls	csn=VW3O1iOhIb5SSSBi&itct=CKABEPxaGAAiEwjWpOzK94qMAxUgFYMDHb5SIpMyB3JlbGF0ZWRIjIjemvif4unlAZoBBQgBEPgd
-.youtube.com	TRUE	/	TRUE	1773538123	__Secure-3PSIDCC	AKEyXzU4k5A8Q2cIHHTbO1aZnOiQ2HJFdFWYUlLipd9LWG7PWgdP8TfvavvzEddg6uFuggff
-
-
-
-
-
-
-# Netscape HTTP Cookie File
-# http://curl.haxx.se/rfc/cookie_spec.html
-# This is a generated file!  Do not edit.
-
 .youtube.com	TRUE	/	TRUE	1739603661	GPS	1
 .youtube.com	TRUE	/	TRUE	1757487067	__Secure-ROLLOUT_TOKEN	CJObjvC5rMfRjwEQkrGW-InFiwMYiru_5_2IjAM%3D
 .youtube.com	TRUE	/	TRUE	1757554185	VISITOR_INFO1_LIVE	96WNF2EjTo8
