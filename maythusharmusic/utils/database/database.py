@@ -894,9 +894,9 @@ async def get_vid_bit_name(chat_id: int) -> str:
     mode = video.get(chat_id)
     if not mode:
         if PRIVATE_BOT_MODE == str(True):
-            return "HD_720p"
+            return "FHD_1080p"
         else:
-            return "HD_720p"
+            return "FHD_1080p"
     return mode
 
 
